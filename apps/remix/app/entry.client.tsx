@@ -27,7 +27,7 @@ function PosthogInit() {
 }
 
 async function main() {
-  const locale = detect(fromHtmlTag('lang')) || 'en';
+  const locale = detect(fromHtmlTag('lang')) || 'pt-BR';
 
   await dynamicActivate(locale);
 
