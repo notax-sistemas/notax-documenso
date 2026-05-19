@@ -30,7 +30,7 @@ const RECIPIENT_COLOR_STYLES: Record<TRecipientColor, () => RecipientColorStyles
     fieldItem: 'group/field-item rounded-[2px]',
     fieldItemInitials: '',
     comboBoxTrigger:
-      'ring-2 ring-recipient-green shadow-[0_0_0_5px_hsl(var(--recipient-green)/10%),0_0_0_2px_hsl(var(--recipient-green)/60%),0_0_0_0.5px_hsl(var(--recipient-green))]',
+      'ring-2 ring-neutral-400 shadow-[0_0_0_5px_hsl(var(--muted-foreground)/10%),0_0_0_2px_hsl(var(--muted-foreground)/60%),0_0_0_0.5px_hsl(var(--muted-foreground))]',
     comboBoxItem: '',
   }),
   green: once(() => generateStyles('green')),
@@ -77,7 +77,7 @@ const CSS_VARIANT = {
   hover: 'hover',
 };
 
-const AVAILABLE_RECIPIENT_COLORS = ['green', 'blue', 'purple', 'orange', 'yellow', 'pink'] as const;
+const AVAILABLE_RECIPIENT_COLORS = ['blue', 'green', 'purple', 'orange', 'yellow', 'pink'] as const;
 
 export const RECIPIENT_DYNAMIC_CLASS = {
   pattern: new RegExp(

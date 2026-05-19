@@ -9,7 +9,7 @@ export default function Layout() {
           <img
             src={backgroundPattern}
             alt="background pattern"
-            className="dark:brightness-95 dark:contrast-[70%] dark:invert dark:sepia"
+            className="hue-rotate-[120deg] dark:brightness-95 dark:contrast-[70%] dark:invert dark:sepia"
             style={{
               mask: 'radial-gradient(rgba(255, 255, 255, 1) 0%, transparent 80%)',
               WebkitMask: 'radial-gradient(rgba(255, 255, 255, 1) 0%, transparent 80%)',

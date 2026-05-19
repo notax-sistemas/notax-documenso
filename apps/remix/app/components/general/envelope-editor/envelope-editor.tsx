@@ -270,7 +270,7 @@ export const EnvelopeEditor = () => {
                   className={cn(
                     `cursor-pointer rounded-lg text-left transition-colors ${
                       isActive
-                        ? 'border border-green-200 bg-green-50 dark:border-green-500/20 dark:bg-green-500/10'
+                        ? 'border border-blue-200 bg-blue-50 dark:border-blue-500/20 dark:bg-blue-500/10'
                         : 'border border-gray-200 hover:bg-gray-50 dark:border-gray-400/20 dark:hover:bg-gray-400/10'
                     }`,
                     {
@@ -283,20 +283,18 @@ export const EnvelopeEditor = () => {
                     <div
                       className={`rounded border p-2 ${
                         isActive
-                          ? 'border-green-200 bg-green-50 dark:border-green-500/20 dark:bg-green-500/10'
+                          ? 'border-blue-200 bg-blue-50 dark:border-blue-500/20 dark:bg-blue-500/10'
                           : 'border-gray-100 bg-gray-100 dark:border-gray-400/20 dark:bg-gray-400/10'
                       }`}
                     >
-                      <Icon className={`h-4 w-4 ${isActive ? 'text-green-600' : 'text-gray-600'}`} />
+                      <Icon className={`h-4 w-4 ${isActive ? 'text-blue-600' : 'text-gray-600'}`} />
                     </div>
 
                     {!minimizeLeftSidebar && (
                       <div>
                         <div
                           className={`font-medium text-sm ${
-                            isActive
-                              ? 'text-green-900 dark:text-green-400'
-                              : 'text-foreground dark:text-muted-foreground'
+                            isActive ? 'text-blue-900 dark:text-blue-400' : 'text-foreground dark:text-muted-foreground'
                           }`}
                         >
                           {t(step.title)}
