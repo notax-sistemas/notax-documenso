@@ -66,7 +66,7 @@ export const AppNavDesktop = ({ className, setIsCommandMenuOpen, ...props }: App
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="flex items-baseline gap-x-6"
+              className="flex items-center gap-x-6"
             >
               {menuNavigationLinks.map(({ href, label }) => (
                 <Link
